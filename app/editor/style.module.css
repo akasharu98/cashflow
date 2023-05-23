@@ -1,0 +1,106 @@
+.body{
+    background-color: white;
+}
+
+.editor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    background-color: grey;
+  }
+  
+  .node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: lightgray;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    
+  }
+  
+  .connection {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 8px;
+  }
+  
+  .svgConnections {
+    position: absolute;
+    margin-top: 200px;
+    margin-left:300px;
+    top: 200;
+    left: 0;
+    width: 300px;
+    height: 150px;
+    z-index: -1;
+  }
+  
+  .lineConnectionArrow {
+    stroke: black;
+    stroke-width: 2px;
+  }
+  
+  .markerArrowhead {
+    fill: rgb(255, 0, 0);
+  }
+  
+  .textUpdaterNode {
+    height: 100px;
+    border: 1px solid #eee;
+    padding: 5px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    color:rgb(181, 2, 2);
+  }
+  
+  .textUpdaterNodeLabel {
+    display: block;
+    color: #000000;
+    font-size: 12px;
+  }
+  .textUpdaterNodeInput {
+    width: 100%;
+   
+    padding: 5px;
+    border: none;
+    resize: none;
+  }
+
+  /* style.module.css */
+
+.expenseNode {
+  height: 180px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+}
+
+.customExpenseNode {
+  /* Add your custom styles here */
+}
+
+.expenseNodeLabel {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.expenseNodeInput {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #000000;
+}
