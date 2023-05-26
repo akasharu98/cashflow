@@ -1,5 +1,6 @@
+"use client"; // This is a client component 
 import { useCallback, useState } from 'react';
-import { Handle, Position } from 'reactflow';
+import { Handle, Position, NodeToolbar } from 'reactflow';
 import styles from './style.module.css';
 
 function ExpenseNode({ data, isConnectable }) {
@@ -17,8 +18,15 @@ function ExpenseNode({ data, isConnectable }) {
     setCost((prevText) => value);
   }, []);
 
+  
+
   return (
     <div className={`${styles.expenseNode} ${styles.customExpenseNode}`}>
+        <NodeToolbar isVisible={data.toolbarVisible} position={data.toolbarPosition}>
+        <button>delete</button>
+        <button>copy</button>
+        <button>expand</button>
+      </NodeToolbar>
       <Handle type="target" position={Position.Left} isConnectable={isConnectable} />
       <div>
         <label className={styles.expenseNodeLabel} htmlFor="expense-type">Expense Type:</label>

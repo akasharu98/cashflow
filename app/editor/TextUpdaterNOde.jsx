@@ -1,3 +1,4 @@
+"use client"; // This is a client component 
 import { useCallback, useRef,useState,useEffect } from 'react';
 import { Handle, Position } from 'reactflow';
 import styles from './style.module.css';
